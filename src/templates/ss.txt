@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspect-Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .form-container {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+        }
+        #sentence {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        h3 {
+            margin-top: 20px;
+        }
+        .result-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .result-list li {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Aspect-Sentiment Classification</h1>
+
+    <div class="form-container">
+        <form method="POST">
+            <label for="sentence">Enter Sentence:</label>
+            <input type="text" name="sentence" id="sentence" required>
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+
+    {% if sentence %}
+        <h2>Analysis Result:</h2>
+        <p><b>Sentence with Aspect Sentiments:</b></p>
+        <!-- Display sentence with colored aspects -->
+        <p>{{ sentence|safe }}</p>
+
+        <h3>Predicted Aspects and Sentiments:</h3>
+        <ul class="result-list">
+            {% for aspect, sentiment in result.items() %}
+                <li><b>{{ aspect }}</b>: {{ sentiment }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+</body>
+</html>
+
