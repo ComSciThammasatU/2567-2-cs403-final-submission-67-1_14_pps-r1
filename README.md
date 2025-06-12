@@ -41,6 +41,7 @@ git clone https://github.com/ComSciThammasatU/2567-2-cs403-final-submission-67-1
 ```bash
 pip install -r requirements.txt
 ```
+   
    2) ใน cmd พิมพ์
 ```bash
 pip install pandas transformers scikit-learn seqeval torch Flask
