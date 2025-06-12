@@ -13,5 +13,24 @@
 1. นางสาวสุชานาถ หันทยุง  6309681598  suchanat.han@dome.tu.ac.th
    
 Manual / Instructions for your projects starts here !
-1. ติดตั้ง Python ในเครื่อง หากยังไม่ได้ติดตั้งให้เข้าไปติดตั้งได้ที่ https://www.python.org/downloads/
-2. 
+## โปรแกรมที่ติดตั้ง
+1. ติดตั้ง Python ในเครื่อง (สามารถใช้ Python เวอร์ชัน 3.12 หรือ 3.13) [ติดตั้ง Python](https://www.python.org/downloads/)
+2. ติดตั้ง Git ในเครื่อง [ติดตั้ง Git](https://git-scm.com/downloads)
+
+เมื่อติดตั้งแล้วสามารถตรวจสอบการติดตั้ง
+เปิด Command Prompt แล้วพิมพ์
+```bash
+python --version
+```
+และตรวจสอบ Git
+```bash
+git --version
+```
+
+## ลงไลบรารีที่ต้องใช้
+สามารถติดตั้งได้ 2 วิธี
+1. 
+2. ใน cmd พิมพ์
+```bash
+pip install pandas transformers scikit-learn seqeval torch Flask
+```
