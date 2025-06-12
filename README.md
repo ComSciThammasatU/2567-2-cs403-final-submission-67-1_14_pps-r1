@@ -32,8 +32,8 @@ git clone https://github.com/ComSciThammasatU/2567-2-cs403-final-submission-67-1
 ```
 4. **ติดตั้งโมเดล**
 ก่อนจะทำการใช้งานโปรแกรมได้ต้องมีการติดตั้งโมเดล 2 ตัวจากโฟลเดอร์ model ใน repository (เนื่องจากไฟล์มีขนาดใหญ่เกินกว่าจะอัพใน github จึงทำการอัพโหลดแยกไว้ที่ Google Drive)
-1) MLTC_model_state.bin
-2) Sentiment_model_state.bin
+   1) MLTC_model_state.bin
+   2) Sentiment_model_state.bin
 
 5. **ลงไลบรารีที่ต้องใช้**
 สามารถติดตั้งได้ 2 วิธี
@@ -41,7 +41,7 @@ git clone https://github.com/ComSciThammasatU/2567-2-cs403-final-submission-67-1
 ```bash
 pip install -r requirements.txt
 ```
-3. ใน cmd พิมพ์
+2. ใน cmd พิมพ์
 ```bash
 pip install pandas transformers scikit-learn seqeval torch Flask
 ```
