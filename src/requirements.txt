@@ -1,5 +1,6 @@
-torch
+pandas
 transformers
-flask
-seqeval
 scikit-learn
+seqeval
+torch
+flask
