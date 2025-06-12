@@ -37,12 +37,11 @@ git clone https://github.com/ComSciThammasatU/2567-2-cs403-final-submission-67-1
 
 5. **ลงไลบรารีที่ต้องใช้**
 สามารถติดตั้งได้จาก 2 วิธี
-   1) เมื่อเปิดใช้งาน cmd สามารถติดตั้งจากไฟล์ requirment.txt ที่ได้จาก git clone ในโฟลเดอร์ src
+- เมื่อเปิดใช้งาน cmd สามารถติดตั้งจากไฟล์ requirment.txt ที่ได้จาก git clone ในโฟลเดอร์ src
 ```bash
 pip install -r requirements.txt
 ```
-   
-   2) ใน cmd พิมพ์
+- ใน cmd พิมพ์
 ```bash
 pip install pandas transformers scikit-learn seqeval torch Flask
 ```
