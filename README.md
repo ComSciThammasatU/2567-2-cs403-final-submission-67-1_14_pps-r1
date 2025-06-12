@@ -18,7 +18,7 @@ Manual / Instructions for your projects starts here !
 2. ติดตั้ง Git ในเครื่อง [ติดตั้ง Git](https://git-scm.com/downloads)
 
 เมื่อติดตั้งแล้วสามารถตรวจสอบการติดตั้ง
-เปิด Command Prompt แล้วพิมพ์
+เปิด Command Prompt พิมพ์
 ```bash
 python --version
 ```
@@ -26,11 +26,38 @@ python --version
 ```bash
 git --version
 ```
+3. ทำการ clone git
+```bash
+git clone https://github.com/ComSciThammasatU/2567-2-cs403-final-submission-67-1_14_pps-r1.git
+```
+4. **ติดตั้งโมเดล**
+ก่อนจะทำการใช้งานโปรแกรมได้ต้องมีการติดตั้งโมเดล 2 ตัวจากโฟลเดอร์ model ใน repository (เนื่องจากไฟล์มีขนาดใหญ่เกินกว่าจะอัพใน github จึงทำการอัพโหลดแยกไว้ที่ Google Drive)
+1) MLTC_model_state.bin
+2) Sentiment_model_state.bin
 
-## ลงไลบรารีที่ต้องใช้
+5. **ลงไลบรารีที่ต้องใช้**
 สามารถติดตั้งได้ 2 วิธี
-1. 
-2. ใน cmd พิมพ์
+1. เมื่อเปิดใช้งาน cmd สามารถติดตั้งจากไฟล์ requirment.txt ที่ได้จาก git clone ในโฟลเดอร์ src
+```bash
+pip install -r requirements.txt
+```
+3. ใน cmd พิมพ์
 ```bash
 pip install pandas transformers scikit-learn seqeval torch Flask
 ```
+
+## เริ่มต้นใช้งานโปรแกรม
+เปิดโฟลเดอร์ src ที่ได้มาจากการ git clone
+1. นำโมเดล 2 โมเดลที่ดาวน์โหลดมา ไปใส่ไว่ในโฟลเดอร์ src ที่ได้จาก git clone ด้วย
+   1) MLTC_model_state.bin
+   2) Sentiment_model_state.bin
+  
+2. ในโฟลเดอร์ src พิมพ์ใน cmd
+```bash
+python project.py
+```
+3. รอโปรแกรมรันลิ้งก์ขึ้นมา จากนั้นเปิด browser (เช่น chrome, microsoft edge) แล้วพิมพ์
+```bash
+127.0.0.1:5000
+```
+4. พิมพ์ประโยคที่ต้องการทดสอบบนหน้าเว็บแล้วกด Analyze
