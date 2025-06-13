@@ -30,7 +30,7 @@ git --version
 ```bash
 git clone https://github.com/ComSciThammasatU/2567-2-cs403-final-submission-67-1_14_pps-r1.git
 ```
-4. **ดาวน์โหลดโมเดล**
+4. **ดาวน์โหลดโมเดลที่เทรนไว้แล้ว**
 ก่อนจะทำการใช้งานโปรแกรมได้ต้องมีการติดตั้งโมเดล 2 ตัวจากโฟลเดอร์ model ใน repository (เนื่องจากไฟล์มีขนาดใหญ่เกินกว่าจะอัพใน github จึงทำการอัพโหลดแยกไว้ที่ Google Drive)
    1) MLTC_model_state.bin
    2) Sentiment_model_state.bin
